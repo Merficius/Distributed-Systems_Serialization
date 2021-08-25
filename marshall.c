@@ -22,23 +22,22 @@ int main()
 int serializeData()
 {
     // Write binary data
-    FILE* file = fopen("datos.mem", "wb"); // Creating the file
-    char* p = &c1;
-    
+    FILE *file = fopen("datos.mem", "wb"); // Creating the file
+    char *p = &c1;
+
     //char *p2 = (char *) &i;
 
-    fprintf(file, "%c\n", p[0]);                
-    fprintf(file, "%c\n", p[1]);                
-    
-    fprintf(file, "%c\n", p[7]);                
-    fprintf(file, "%c\n", p[6]);                
-    fprintf(file, "%c\n", p[5]);                
-    fprintf(file, "%c\n", p[4]);                
+    fprintf(file, "%c\n", p[0]);
+    fprintf(file, "%c\n", p[1]);
 
-    fprintf(file, "%c\n", p[8]); 
-    fprintf(file, "%c\n", p[9]); 
-          
-    fclose(file);                          // Closing the file
+    fprintf(file, "%c\n", p[7]);
+    fprintf(file, "%c\n", p[6]);
+    fprintf(file, "%c\n", p[5]);
+    fprintf(file, "%c\n", p[4]);
+
+    fprintf(file, "%c\n", p[8]);
+    fprintf(file, "%c\n", p[9]);
+
+    fclose(file); // Closing the file
     return 0;
-
 }
