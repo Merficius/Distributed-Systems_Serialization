@@ -24,7 +24,7 @@ int readSerializedData()
 
     //Reading binary data
     FILE* file = fopen("datos.bin", "rb");  
-    c1 = fgetc(file) + "" + fgetc(file);
+    c1 = fgetc(file);
     fclose(file);
 
     printf("%c", c1);
